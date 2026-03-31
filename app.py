@@ -51,7 +51,7 @@ if option == "Email Fraud Detection":
 # ================= FINANCIAL FRAUD =================
 elif option == "Financial Fraud Detection":
 
-    df = pd.read_csv("fraud_dataset.csv")
+    df = pd.read_csv("fraud_small.csv")
     df.columns = df.columns.str.strip()
 
     df = df.sample(5000, random_state=42)   # reduced for speed
