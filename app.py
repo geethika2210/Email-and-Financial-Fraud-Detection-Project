@@ -18,7 +18,7 @@ option = st.selectbox(
 # ================= EMAIL FRAUD =================
 if option == "Email Fraud Detection":
 
-    df = pd.read_csv("phishing_email.csv")
+    df = pd.read_csv("phishing_small.csv")
 
     X = df['text_combined']
     y = df['label']
